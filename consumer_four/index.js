@@ -75,13 +75,6 @@ async function consumeMessages() {
       );
     } else if (data.message.type === 3) {
       const result = await setOrderDelivered(data.message.id);
-      const resQ = await channel.assertQueue("order_details");
-      await channel.bindQueue(resQ.queue, exchangeName, "order_details");
-      await channel.publish(
-        "producerExchange",
-        "order_details",
-        Buffer.from(JSON.stringify(result))
-      );
     }
     channel.ack(msg);
   });

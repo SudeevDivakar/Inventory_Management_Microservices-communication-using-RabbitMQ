@@ -18,6 +18,7 @@ async function consumeMessages() {
       "health_check_response",
       Buffer.from(JSON.stringify("healthy"))
     );
+    channel.ack(msg);
   });
 }
 
