@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # Command to run the consumer_three service
-CMD ["node", "stock_management.js"]
+CMD ["node", "index.js"]
