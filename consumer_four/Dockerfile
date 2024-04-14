@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # Command to run the consumer_four service
-CMD ["node", "order_processing.js"]
+CMD ["node", "index.js"]
