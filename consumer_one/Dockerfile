@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # Command to run the consumer_one service
-CMD ["node", "health_check.js"]
+CMD ["node", "index.js"]
