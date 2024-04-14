@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # Command to run the producer service
-CMD ["node", "producer.js"]
+CMD ["node", "index.js"]
