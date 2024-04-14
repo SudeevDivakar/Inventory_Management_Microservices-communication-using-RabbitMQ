@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # Command to run the consumer_two service
-CMD ["node", "item_creation.js"]
+CMD ["node", "index.js"]
