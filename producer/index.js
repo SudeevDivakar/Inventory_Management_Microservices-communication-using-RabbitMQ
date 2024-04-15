@@ -76,15 +76,16 @@ app.put("/order", async (req, res) => {
   res.send({ delivered: true });
 });
 
+app.post("/order/new", async (req, res) => {
+  await producer.publishMessage(req.body.logType, req.body.message);
+  res.send(req.body.message);
+});
+
 app.post("/item/new", async (req, res) => {
   await producer.publishMessage(req.body.logType, req.body.message);
   res.send(req.body.message);
 });
 
-app.post("/order/new", async (req, res) => {
-  await producer.publishMessage(req.body.logType, req.body.message);
-  res.send(req.body.message);
-});
 
 app.listen(PORT, () => {
   console.log(`Server Started on Port ${PORT}`);
