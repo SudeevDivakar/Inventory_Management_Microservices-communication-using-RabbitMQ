@@ -5,6 +5,10 @@ Backend Inventory Management System using Node JS.
 RabbitMQ used as a message broker and Docker used for containerization.
 MongoDB used as the database to store inventory data.
 
+## Preview
+![Alt text](./output_images/microservice_one.png)
+![Alt text](./output_images/microservice_two.jpeg)
+
 ## Key Features
 1. Health Check Microservice to make sure the server is up and running. (consumer_one)
 1. Item Creation Microservice to create an item. (consumer_two)
