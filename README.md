@@ -6,6 +6,8 @@ Backend Inventory Management System using Node JS.
 RabbitMQ used as a message broker and Docker used for containerization.
 MongoDB used as the database to store inventory data.
 
+The project is made up of a producer and four consumers. The producer sends messages to an exchange which then routes the messages in the appropriate queues. The queues connect to their respective consumers which all perform various database operations.
+
 ## Preview
 
 ![Alt text](./output_images/microservice_one.png)
